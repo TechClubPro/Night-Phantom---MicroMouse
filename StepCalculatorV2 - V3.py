@@ -29,10 +29,10 @@ image= pygame.image.load("Images/Stepper Motor Symbol.png")
 screen.blit(image,(55,50))
 w, h = image.get_size()
 
-image1= pygame.image.load("Images/Stepper Motor Symbol1.png")
+image1= pygame.image.load("Images/Stepper Motor Symbol.png")
 """ Display Image at Specific Co-Ordinate"""
 
-screen.blit(image,(300, 300))
+screen.blit(image1,(300, 300))
 w, h = image.get_size()
 
 #----------------------------------------------
@@ -101,8 +101,8 @@ screen.blit(text, (1062, 618))
 #To Display Text: "Travelling"
 font = pygame.font.SysFont('Bauhaus 93', 35)
 text = font.render("Travelling...", False, (0, 0, 255))
-image1 = pygame.Surface((text.get_width()+1, text.get_height()+1))
-pygame.draw.rect(image1, (0, 0, 255), (1, 1, *text.get_size()))
+image_Text = pygame.Surface((text.get_width()+1, text.get_height()+1))
+pygame.draw.rect(image_Text, (0, 0, 255), (1, 1, *text.get_size()))
 screen.blit(text, (650, 420))
 
 #-------------------------------------------------------------
